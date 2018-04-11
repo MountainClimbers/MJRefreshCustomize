@@ -6,30 +6,25 @@
 //  Copyright © 2018年 qjmac. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "ViewController2.h"
-
 #import "ViewController3.h"
+#import "MJDIYSecondHeader.h"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ViewController3 ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *tableVi;
 @property(nonatomic,strong)NSMutableArray *dataArray;
 @end
 
-@implementation ViewController
+@implementation ViewController3
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self initPageData];
     [self initPageVIew];
+    [self addMJRefresh];
 }
 
 - (void)initPageData{
-    self.dataArray = [[NSMutableArray alloc] init];
-    
-    [self.dataArray addObject:@"自定义动画一"];
-    [self.dataArray addObject:@"自定义动画二"];
+
 }
 
 - (void)initPageVIew{
@@ -37,36 +32,50 @@
     self.tableVi.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     self.tableVi.dataSource = self;
     self.tableVi.delegate = self;
-
-    [self.tableVi registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellIdentifier"];
     [self.view addSubview:self.tableVi];
 }
 
+-(void)addMJRefresh{
+    __weak __typeof(self) weakSelf = self;
+    
+    MJDIYSecondHeader* header = [[MJDIYSecondHeader alloc] initWithFrame:CGRectZero];
+    
+    header.refreshingBlock = ^{
+        
+        __weak UITableView *tableView = self.tableVi;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
+            // 拿到当前的上拉刷新控件，结束刷新状态
+            [tableView.mj_header endRefreshing];
+            
+        });
+    };
+    
+    
+    
+    //    header.backgroundColor = UIColorFromRGB(0xf5f5f5);
+    self.tableVi.mj_header = header;
+    
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.dataArray.count;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellIdentifier" forIndexPath:indexPath];
-
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellIdentifier"];
     if (self.dataArray.count - 1 >= indexPath.section) {
         cell.textLabel.text = self.dataArray[indexPath.section];
     }
     return cell;
-    
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.section == 0) {
-        [self.navigationController pushViewController:[ViewController2 new] animated:YES];
-    } else if (indexPath.section == 1) {
-        [self.navigationController pushViewController:[ViewController3 new] animated:YES];
-    }
+    
 }
 
 
@@ -77,3 +86,4 @@
 
 
 @end
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F229EA11BBDA0B284343C8BE /* Pods_MJRefreshCustomize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40EEF5CD29048F2C64A04EDF /* Pods_MJRefreshCustomize.framework */; };
 		FCECFAEE207DFA9C00B520AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCECFAED207DFA9C00B520AA /* AppDelegate.m */; };
 		FCECFAF1207DFA9C00B520AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCECFAF0207DFA9C00B520AA /* ViewController.m */; };
 		FCECFAF4207DFA9C00B520AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCECFAF2207DFA9C00B520AA /* Main.storyboard */; };
@@ -15,6 +16,12 @@
 		FCECFAFC207DFA9C00B520AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCECFAFB207DFA9C00B520AA /* main.m */; };
 		FCECFB06207DFA9D00B520AA /* MJRefreshCustomizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCECFB05207DFA9D00B520AA /* MJRefreshCustomizeTests.m */; };
 		FCECFB11207DFA9D00B520AA /* MJRefreshCustomizeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCECFB10207DFA9D00B520AA /* MJRefreshCustomizeUITests.m */; };
+		FCECFB27207E003300B520AA /* MJDIYSecondHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = FCECFB24207E003300B520AA /* MJDIYSecondHeader.m */; };
+		FCECFB28207E003300B520AA /* MJDIYHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = FCECFB26207E003300B520AA /* MJDIYHeader.m */; };
+		FCECFB2B207E00AE00B520AA /* NSTimer+timerBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FCECFB2A207E00AE00B520AA /* NSTimer+timerBlock.m */; };
+		FCECFB2E207E014400B520AA /* UIColor+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = FCECFB2D207E014400B520AA /* UIColor+Additional.m */; };
+		FCECFB31207E045000B520AA /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = FCECFB30207E045000B520AA /* ViewController2.m */; };
+		FCECFB34207E045D00B520AA /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = FCECFB33207E045D00B520AA /* ViewController3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40EEF5CD29048F2C64A04EDF /* Pods_MJRefreshCustomize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MJRefreshCustomize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B9ADFC85B382AC0F4D9BF4 /* Pods-MJRefreshCustomize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJRefreshCustomize.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MJRefreshCustomize/Pods-MJRefreshCustomize.debug.xcconfig"; sourceTree = "<group>"; };
+		AEF049C6A87DB1F08ACB6C92 /* Pods-MJRefreshCustomize.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJRefreshCustomize.release.xcconfig"; path = "Pods/Target Support Files/Pods-MJRefreshCustomize/Pods-MJRefreshCustomize.release.xcconfig"; sourceTree = "<group>"; };
 		FCECFAE9207DFA9C00B520AA /* MJRefreshCustomize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJRefreshCustomize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCECFAEC207DFA9C00B520AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FCECFAED207DFA9C00B520AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +61,18 @@
 		FCECFB0C207DFA9D00B520AA /* MJRefreshCustomizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MJRefreshCustomizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCECFB10207DFA9D00B520AA /* MJRefreshCustomizeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRefreshCustomizeUITests.m; sourceTree = "<group>"; };
 		FCECFB12207DFA9D00B520AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCECFB23207E003300B520AA /* MJDIYSecondHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDIYSecondHeader.h; sourceTree = "<group>"; };
+		FCECFB24207E003300B520AA /* MJDIYSecondHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDIYSecondHeader.m; sourceTree = "<group>"; };
+		FCECFB25207E003300B520AA /* MJDIYHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDIYHeader.h; sourceTree = "<group>"; };
+		FCECFB26207E003300B520AA /* MJDIYHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDIYHeader.m; sourceTree = "<group>"; };
+		FCECFB29207E00AD00B520AA /* NSTimer+timerBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+timerBlock.h"; sourceTree = "<group>"; };
+		FCECFB2A207E00AE00B520AA /* NSTimer+timerBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+timerBlock.m"; sourceTree = "<group>"; };
+		FCECFB2C207E014300B520AA /* UIColor+Additional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additional.h"; sourceTree = "<group>"; };
+		FCECFB2D207E014400B520AA /* UIColor+Additional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additional.m"; sourceTree = "<group>"; };
+		FCECFB2F207E045000B520AA /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		FCECFB30207E045000B520AA /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		FCECFB32207E045D00B520AA /* ViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		FCECFB33207E045D00B520AA /* ViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F229EA11BBDA0B284343C8BE /* Pods_MJRefreshCustomize.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +101,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22F634DA80C74453277C9EA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40EEF5CD29048F2C64A04EDF /* Pods_MJRefreshCustomize.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E10D2616B0D71373AF58881A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46B9ADFC85B382AC0F4D9BF4 /* Pods-MJRefreshCustomize.debug.xcconfig */,
+				AEF049C6A87DB1F08ACB6C92 /* Pods-MJRefreshCustomize.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FCECFAE0207DFA9B00B520AA = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +125,8 @@
 				FCECFB04207DFA9D00B520AA /* MJRefreshCustomizeTests */,
 				FCECFB0F207DFA9D00B520AA /* MJRefreshCustomizeUITests */,
 				FCECFAEA207DFA9C00B520AA /* Products */,
+				E10D2616B0D71373AF58881A /* Pods */,
+				22F634DA80C74453277C9EA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +143,15 @@
 		FCECFAEB207DFA9C00B520AA /* MJRefreshCustomize */ = {
 			isa = PBXGroup;
 			children = (
+				FCECFB1E207DFD3200B520AA /* DIY */,
 				FCECFAEC207DFA9C00B520AA /* AppDelegate.h */,
 				FCECFAED207DFA9C00B520AA /* AppDelegate.m */,
 				FCECFAEF207DFA9C00B520AA /* ViewController.h */,
 				FCECFAF0207DFA9C00B520AA /* ViewController.m */,
+				FCECFB2F207E045000B520AA /* ViewController2.h */,
+				FCECFB30207E045000B520AA /* ViewController2.m */,
+				FCECFB32207E045D00B520AA /* ViewController3.h */,
+				FCECFB33207E045D00B520AA /* ViewController3.m */,
 				FCECFAF2207DFA9C00B520AA /* Main.storyboard */,
 				FCECFAF5207DFA9C00B520AA /* Assets.xcassets */,
 				FCECFAF7207DFA9C00B520AA /* LaunchScreen.storyboard */,
@@ -132,6 +179,21 @@
 			path = MJRefreshCustomizeUITests;
 			sourceTree = "<group>";
 		};
+		FCECFB1E207DFD3200B520AA /* DIY */ = {
+			isa = PBXGroup;
+			children = (
+				FCECFB2C207E014300B520AA /* UIColor+Additional.h */,
+				FCECFB2D207E014400B520AA /* UIColor+Additional.m */,
+				FCECFB29207E00AD00B520AA /* NSTimer+timerBlock.h */,
+				FCECFB2A207E00AE00B520AA /* NSTimer+timerBlock.m */,
+				FCECFB25207E003300B520AA /* MJDIYHeader.h */,
+				FCECFB26207E003300B520AA /* MJDIYHeader.m */,
+				FCECFB23207E003300B520AA /* MJDIYSecondHeader.h */,
+				FCECFB24207E003300B520AA /* MJDIYSecondHeader.m */,
+			);
+			path = DIY;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCECFB15207DFA9D00B520AA /* Build configuration list for PBXNativeTarget "MJRefreshCustomize" */;
 			buildPhases = (
+				EC025C283A39DDC14DC6EE23 /* [CP] Check Pods Manifest.lock */,
 				FCECFAE5207DFA9C00B520AA /* Sources */,
 				FCECFAE6207DFA9C00B520AA /* Frameworks */,
 				FCECFAE7207DFA9C00B520AA /* Resources */,
+				7B9754C0AA5B33AB6C30E70C /* [CP] Embed Pods Frameworks */,
+				258228198572FDCDED02A597 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,13 +325,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		258228198572FDCDED02A597 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJRefreshCustomize/Pods-MJRefreshCustomize-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B9754C0AA5B33AB6C30E70C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJRefreshCustomize/Pods-MJRefreshCustomize-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC025C283A39DDC14DC6EE23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FCECFAE5207DFA9C00B520AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCECFB28207E003300B520AA /* MJDIYHeader.m in Sources */,
+				FCECFB27207E003300B520AA /* MJDIYSecondHeader.m in Sources */,
+				FCECFB34207E045D00B520AA /* ViewController3.m in Sources */,
 				FCECFAF1207DFA9C00B520AA /* ViewController.m in Sources */,
+				FCECFB2E207E014400B520AA /* UIColor+Additional.m in Sources */,
 				FCECFAFC207DFA9C00B520AA /* main.m in Sources */,
+				FCECFB31207E045000B520AA /* ViewController2.m in Sources */,
+				FCECFB2B207E00AE00B520AA /* NSTimer+timerBlock.m in Sources */,
 				FCECFAEE207DFA9C00B520AA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,11 +547,13 @@
 		};
 		FCECFB16207DFA9D00B520AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B9ADFC85B382AC0F4D9BF4 /* Pods-MJRefreshCustomize.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49QL38VYXX;
 				INFOPLIST_FILE = MJRefreshCustomize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bcc.MJRefreshCustomize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,11 +563,13 @@
 		};
 		FCECFB17207DFA9D00B520AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEF049C6A87DB1F08ACB6C92 /* Pods-MJRefreshCustomize.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49QL38VYXX;
 				INFOPLIST_FILE = MJRefreshCustomize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bcc.MJRefreshCustomize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
